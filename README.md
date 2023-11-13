@@ -1,17 +1,18 @@
 # survival-analysis
 ## Survival Analysis in R
 Survival Time Analysis: Survival time analysis, also known as survival analysis, is a branch of statistics that deals with the analysis of time-to-event data. The "event" in question can be death, occurrence of a disease, machine failure, churn, etc. It's particularly useful when dealing with incomplete data due to censoring, a common issue in longitudinal studies.
-Censored Data: Censored data occurs when the information about the time to event is incomplete. There are three main types:
-Right-Censored Data: The most common form in survival analysis. Here, the event of interest has not occurred for some subjects during the study period. For example, if a study ends after five years, but some patients are still alive, their survival time is censored.
-Left-Censored Data: This occurs when subjects have already experienced the event before the study begins. We only know that the event happened before a certain time.
-Interval-Censored Data: This happens when we know the event occurred within a certain time interval but not the exact time.
-Kaplan-Meier Estimator: The Kaplan-Meier estimator is a non-parametric statistic used to estimate the survival function from lifetime data. It's useful in calculating the probability of survival at different times, even with right-censored data.
-Cox Proportional Hazards Model (Cox Regression): Cox regression is a semi-parametric model used for survival analysis. It models the hazard - the risk of the event happening at time t, given survival until time 
-t - as a function of covariates. Unlike the Kaplan-Meier method, it can handle both categorical and continuous variables and assess the impact of multiple variables on survival.
-Log-Rank Test: The log-rank test is a hypothesis test to compare the survival distributions of two or more groups. It's particularly useful when you want to check if there are statistically significant differences between the survival curves of different groups.
-Key Differences
-Kaplan-Meier vs. Cox Regression: Kaplan-Meier is a descriptive tool that provides an estimate of the survival function and is limited to univariate analysis. Cox regression, on the other hand, is used for multivariate analysis to assess the impact of several risk factors simultaneously.
-Log-Rank Test: This test is often used alongside Kaplan-Meier estimates to compare survival curves but doesn't fit a full survival model like the Cox model.
+Censored Data: Censored data occurs when the information about the time to event is incomplete. 
+
+## There are three main types:
+### Right-Censored Data: The most common form in survival analysis. Here, the event of interest has not occurred for some subjects during the study period. For example, if a study ends after five years, but some patients are still alive, their survival time is censored.
+### Left-Censored Data: This occurs when subjects have already experienced the event before the study begins. We only know that the event happened before a certain time.
+### Interval-Censored Data: This happens when we know the event occurred within a certain time interval but not the exact time.
+### Kaplan-Meier Estimator: The Kaplan-Meier estimator is a non-parametric statistic used to estimate the survival function from lifetime data. It's useful in calculating the probability of survival at different times, even with right-censored data.
+### Cox Proportional Hazards Model (Cox Regression): Cox regression is a semi-parametric model used for survival analysis. It models the hazard - the risk of the event happening at time t, given survival until time, t - as a function of covariates. Unlike the Kaplan-Meier method, it can handle both categorical and continuous variables and assess the impact of multiple variables on survival.
+### Log-Rank Test: The log-rank test is a hypothesis test to compare the survival distributions of two or more groups. It's particularly useful when you want to check if there are statistically significant differences between the survival curves of different groups.
+## Key Differences
+### Kaplan-Meier vs. Cox Regression: Kaplan-Meier is a descriptive tool that provides an estimate of the survival function and is limited to univariate analysis. Cox regression, on the other hand, is used for multivariate analysis to assess the impact of several risk factors simultaneously.
+### Log-Rank Test: This test is often used alongside Kaplan-Meier estimates to compare survival curves but doesn't fit a full survival model like the Cox model.
 
 Understanding Censored Data
 Censored data is common in real-world datasets, especially in longitudinal studies where follow-up is involved.
